@@ -5,9 +5,12 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
+import Menu from '../components/Menu'
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
+    <Menu />
     <h1>Hello AWS Community</h1>
     <p>Welcome to the 2019 ACD Bay Area.</p>
     <p>Let's build something great!</p>
