@@ -2,6 +2,8 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+console.log('The Header has been loaded');
+
 const Header = ({ siteTitle }) => (
   <header
     style={{

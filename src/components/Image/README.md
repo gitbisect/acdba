@@ -1,0 +1,1 @@
+This component was generated in the components directory when gatsby initialized the project. After that it was moved to its own folder under component.
