@@ -10,8 +10,8 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
 import Header from "../Header/header"
-import "./layout.css"
-console.log('The layout has been loaded');
+import "../../stylesheets/layout.css"
+import NavTabs from "../NavTabs";
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -36,7 +36,20 @@ const Layout = ({ children }) => (
             paddingTop: 0,
           }}
         >
-          <main>{children}</main>
+          <main>
+            <NavTabs />
+            {children}
+            <ul className="list">
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Totam doloribus quo blanditiis?</li>
+              <li>Eum soluta ipsam iusto.</li>
+              <li>Unde pariatur vitae quam?</li>
+              <li>Similique fuga quae quas?</li>
+            </ul>
+
+            <button disabled="disabled">Hello</button>
+            <button type="primary">Blue?</button>
+          </main>
           <footer>
             © {new Date().getFullYear()}, Built with
             {` `}
